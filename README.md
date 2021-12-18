@@ -1,5 +1,10 @@
 # Capstone project for Avtaar internship program
 
+```diff
+- **NOTE** - Project is still under developement hence, this is the work i have finished untill now.
+```
+
+
 ### Step-by-step guide to run the project.
 
 
@@ -70,15 +75,15 @@ or you can also type
 Design and develope a user event mangement system which shoukd have a flexible, responsive frontend and a fully fledged and functioning backend.
 
 ### Project must have -
-* __** Login page **__ 
-* __** Signup page**__ 
-* __** Home page with dynamic content( should open only when user is logged in ), plus a logout button and user email should always appear (if logged in) **__
-* __** A Dynamic Calendar to display events. **__ 
-* __** Should be able to connect to db (any of your choice) and should be able to perform CRUD operations as per project needs. **__ 
-* __** On database side, 2 tables should be there users table, events table.  **__ 
-* __** Password stored in db should be encrypted for enhancing security. **__ 
-* __** Should serve relevant errors or messages accordingly. **__ 
-* __** While displaying events table should give a scroll back button for the ease of user. **__ 
+* _Login page_ 
+* _Signup page_ 
+* _Home page with dynamic content( should open only when user is logged in ), plus a logout button and user email should always appear (if logged in)_
+* _A Dynamic Calendar to display events._ 
+* _Should be able to connect to db (any of your choice) and should be able to perform CRUD operations as per project needs._ 
+* _On database side, 2 tables should be there users table, events table._ 
+* _Password stored in db should be encrypted for enhancing security._ 
+* _Should serve relevant errors or messages accordingly._ 
+* _While displaying events table should give a scroll back button for the ease of user._ 
 
 
 

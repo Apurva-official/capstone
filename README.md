@@ -50,7 +50,7 @@ or you can also type
 
 #### 7. If you see the interface shown below, congratulations everything is up to the mark and now you can test the project and see how its working.
 
-![Interface_1.jpg](https://github.com/Apurva-official/readme/blob/main/Screenshot%20(233).png)
+![Interface_1.jpg](https://github.com/Apurva-official/capstone/blob/main/Output%20images/Login.png)
 
 
 
@@ -106,11 +106,14 @@ Design and develope a user event mangement system which shoukd have a flexible, 
 ## UI of the project looks like - 
 
 LOGIN Page
-![Output-1](https://)
+![Output-1](https://github.com/Apurva-official/capstone/blob/main/Output%20images/Login.png)
 SIGNUP Page
-![Output-2](https://)
+![Output-2](https://github.com/Apurva-official/capstone/blob/main/Output%20images/signup.png)
 HOME Page
-![Output-3](https://)
+![Output-3](https://github.com/Apurva-official/capstone/blob/main/Output%20images/calendar.png)
 EVENT DETAILS Table
-
+![Output-4](https://github.com/Apurva-official/capstone/blob/main/Output%20images/event.png)
+![Output-5](https://github.com/Apurva-official/capstone/blob/main/Output%20images/eventScroll.png)
+LOGIN AUTH WITH ERROR MESSAGE
+![Output-6](https://github.com/Apurva-official/capstone/blob/main/Output%20images/loginAuth.png)
 

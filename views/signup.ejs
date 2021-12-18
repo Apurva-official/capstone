@@ -1,0 +1,51 @@
+<%- include("header") %> 
+  <div class="holder">
+
+    <div>
+      <h3><a href="/">Login</a> or Signup to continue...</h3>
+    </div>
+    <div class="container">
+      <div>
+        <h4>Signup Form</h4>
+      </div>
+      <hr>
+
+      <form action="/auth/signup" method="POST">
+     
+        <div>
+          <input type="text" name="name" id="name" required>
+          <span>Name</span>
+        </div>
+        <div>
+          <input type="number" name="age" id="age" required>
+          <span>Age</span>
+        </div>
+        <div>
+          <input type="text" name="gender" id="gender" required>
+          <span>Gender</span>
+        </div>
+        <div>
+          <input type="email" name="email" id="email" required>
+          <span>Email Address</span>
+        </div>
+        <div>
+          <input type="password" id="password" name="password" required>
+          <span>Password</span>
+        </div>
+         <div>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+          <span>Confirm Password</span>
+        </div>
+         <% if(message) {  %>
+        <div>
+          <h4 id="instructions"><%= message %></h4>
+        </div>
+      <% } %>
+        <button class="btn signup-btn">Sign Up</button>
+
+      </form>
+      
+    </div>
+  </div>
+
+  <%- include("footer") %> 

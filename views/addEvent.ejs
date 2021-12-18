@@ -1,0 +1,54 @@
+<%- include ("header") %> 
+  <div class="holder">
+
+    
+    <div class="container">
+      <div>
+        <h4>Add Event</h4>
+      </div>
+      <hr>
+      <form action="/auth/addEvent" method="POST">
+     
+          
+          <div>
+            <input type="text" name="userid" id="userid" required>
+            <span>User Id</span>
+          </div>
+          <div>
+            <input type="text" name="ename" id="ename" required>
+            <span>Event Name</span>
+          </div>
+          <div class="radios">
+            <p class="span-ads">Event Occurence</p>
+          <div>
+            <input type="radio" id="onetime" name="occurence" value="ONETIME">
+            <label for="onetime">ONETIME</label>
+          </div>
+          <div>
+            <input type="radio" id="yearly" name="occurence" value="YEARLY">
+            <label for="yearly">YEARLY</label>
+          </div>
+          </div>
+          
+         
+          <div>
+            <input type="date" id="startdate" name="startdate" required>
+            <span>Start Date</span>
+          </div>
+          <div>
+            <input type="date" id="enddate" name="enddate" required>
+            <span>End Date</span>
+          </div>
+           <% if(message) {  %>
+          <div>
+            <h4 id="instructions"><%= message %></h4>
+          </div>
+        <% } %>
+          <button class="btn">Add Event</button>
+  
+    </form>
+      
+    </div>
+  </div>
+
+  <%- include("footer") %> 

@@ -1,0 +1,93 @@
+<%- include("userHeader") %> 
+
+
+
+  <div class="holder d-flex">
+    <!-- <h1>My Home Page.</h1>
+    <h5>{{message}}.</h5>
+   -->
+    <section class="mx-auto">
+      <div class="box mx-auto">
+        <div class="container">
+          <div id="dycalendar">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/dycalendar.js"></script>
+    <script>
+      dycalendar.draw({
+        target: '#dycalendar',
+       
+        type: 'month',
+        prevnextbutton: 'show',
+        dayformat: "full",
+        monthformat: "full",
+        highlighttargetdate: true,
+      })
+
+    </script>
+
+
+      </div>
+
+
+      <div class="container mx-auto w-100">
+        <div class="d-flex p-2 mx-auto">
+        <div>
+          <h2>Event Details</h2>
+        </div>
+        
+        
+          <div class="mx-4 n-btn">
+            <a href="/add-event">Add event</a>
+          </div>
+        
+        </div>
+        <div id="list-holder">
+          <table class="p-3">
+            <thead>
+              <tr>
+                <th>eid</th>
+                <th>uid</th>
+                <th>name</th>
+                <th>ocurrence</th>
+                <th>startDate</th>
+                <th>endDate</th>
+              </tr>
+            </thead>
+         
+            <tbody>
+             
+              <% for(var i=0;i<res.length;i++){ %>
+                <tr>
+                  <td> <%= res[i].eid %></td>
+                  <td> <%= res[i].uid %></td>
+                  <td> <%= res[i].name %></td>
+                  <td> <%= res[i].occurence %></td>
+                  <td> <%= res[i].startDate %></td>
+                  <td> <%= res[i].endDate %></td>
+                </tr>
+              <% }%>
+             
+            </tbody>
+          </table>
+          
+                     
+          </div>
+          <button class="back-to-top"><i class="fa fa-angle-double-up"></i></button>
+          </div>
+          <script>
+  
+            document.querySelector(".back-to-top").addEventListener('click', function () {
+              topFunction();
+            })
+  
+            function topFunction() {
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+          </script>
+
+<%- include("footer") %> 

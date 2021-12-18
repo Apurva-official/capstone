@@ -1,0 +1,42 @@
+
+  <div class="profile-div" id="profileId">
+    <table>
+      <thead>
+        <tr>
+
+          <th>User id</th>
+          <th>User name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+   
+      <tbody>
+       
+       
+          <tr>
+            <td> <%= user.uid %></td>
+            <td> <%= user.name %></td>
+            <td> <%= user.age %></td>
+            <td> <%= user.gender %></td>
+            <td> <%= user.email %></td>
+            <td> <%= user.password %></td>
+          </tr>
+       
+       
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  document.querySelector(".profile-btn").addEventListener("click", function(req, res){
+    var checkDrop = document.querySelector(".profile-div").style.display;
+    if(checkDrop === "none"){
+      checkDrop = "block";
+    }
+    else{ checkDrop = "none"; }
+  })
+</script>

@@ -1,0 +1,37 @@
+<%- include("header") %> 
+
+<body>
+  <div><h1>USER EVENT MANAGEMENT SYSTEM</h1></div>
+  <div><h3>Login or <a href="/signup">Signup</a> to continue...</h3> </div>
+
+    <div class="container">
+      
+        <div>
+          <% if(message) {  %>
+          <h4 id="instructions"><%= message %></h4>
+          <% } %>
+        </div>
+     
+      <form action="/login" method="post" id="loginForm">
+      <div> <h4 id="instructions"></h4></div>
+      <div>
+      <input type="email" id="inputEmail">
+      <span>Email Address</span>
+      </div>
+    <div>
+      <input type="password" id="inputPass">
+      <span>Password</span> 
+    </div>
+    
+    <div>
+     <button onclick="forgotPass()" id="forgetPass"> Forget Password </button>
+    </div>
+   
+      <button class="btn login-btn">LOGIN</button>
+     
+   
+  </form>
+    </div>
+
+
+    <%- include("footer") %> 

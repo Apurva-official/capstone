@@ -22,7 +22,7 @@
 ::-webkit-scrollbar-thumb {
   background: rgb(12, 12, 53);
   border-radius: 20px;
-  height: 3%;
+  height: 5px;
   
 }
 
@@ -41,7 +41,7 @@ body {
     max-height: auto;
     background-color: whitesmoke;
     /* background-image: linear-gradient(to right,#56f8c5df, #1c7ee0); */
- 
+ overflow-x: hidden;
 }
 
 header{
@@ -83,7 +83,7 @@ header{
 
 
 .holder{
-      padding: 12vh 6vw 9vh;
+      padding: 15vh 6vw 12vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -387,9 +387,6 @@ th{
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 5px;
-  position: absolute;
-  right: 60px;
-  bottom: 0;
 }
 
 .n-btn{
@@ -414,6 +411,7 @@ th{
   /* responsive behaviour */
 @media (min-width: 10px) and (max-width: 700px){
   .holder{
+    margin-top: 22vh;
     flex-direction: column;
   }
   #list-holder{
@@ -427,8 +425,13 @@ th{
     font-size: 12px;
   }
   .back-to-top{
-    width: 80vw;
+    width: 100px;
+    margin: 50px auto;
   }
+  header{
+    font-size: 12px;
+  }
+  
 }
 
 
